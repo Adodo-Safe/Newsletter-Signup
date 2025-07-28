@@ -1,0 +1,57 @@
+body{
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 200px;
+  padding: 50px;
+}
+.logoIMG{
+  border-radius: 5px;
+  width: 100px;
+  align-self: center;
+  
+  
+}
+h1{
+  font-size: 20px;
+  text-align: center;
+}
+.inputs{
+  display: flex;
+  flex-direction: column;
+  mmargin: 5%
+}
+.inputs input{
+  margin:0;
+}
+.fName{
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.lName{
+  border-radius: 0;
+}
+.mail{
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.submitBtn{
+  background-color: #58A0C8;
+  border-radius: 4px;
+  margin-top: 7px;
+}
+.submitBtn:active{
+  background-color: grey;
+}
+.inputs button{
+  outline: none;
+}
+footer{
+  color: grey;
+  padding-top: 3rem;
+  text-align: center;
+
+}
