@@ -33,7 +33,7 @@ app.post("/", function(req,res){
   const url = "https://us3.api.mailchimp.com/3.0/lists/474f13493d"
   const options = {
     method:"POST",
-    auth: "safe01:ed2cfbf344707b92c825e3d00ad0ba87-us3"
+    auth: "safe01:ea105b436fd939775e77a0ce557d25d8-us3"
   }
   const request = https.request(url,options,function (response){
     if (response.statusCode === 200){
@@ -55,9 +55,10 @@ app.post("/failure", function(req,res){
 });
 
 
-app.listen(3000, function(){
+app.listen(process.env.PORT || 3000, function(){
   console.log("server is currently running on port 3000");
 })
 
 //api key: ed2cfbf344707b92c825e3d00ad0ba87-us3
 //list id  474f13493d
+//new api key: ea105b436fd939775e77a0ce557d25d8-us3
