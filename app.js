@@ -33,8 +33,8 @@ app.post("/", function(req,res){
   const url = "https://us3.api.mailchimp.com/3.0/lists/474f13493d"
   const options = {
     method:"POST",
-    auth: "safe01:ea105b436fd939775e77a0ce557d25d8-us3"
-  }
+    auth: "safe01:" + process.env.MAILCHIMP_API_KEY
+  };
   const request = https.request(url,options,function (response){
     if (response.statusCode === 200){
     res.sendFile(__dirname+"/success.html");
